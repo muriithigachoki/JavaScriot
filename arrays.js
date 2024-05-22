@@ -120,6 +120,7 @@ function dashbord(users) {
   const postsArrs = [];
   const likes = [];
   let totalLikes = 0;
+  
   users.map((userArr) => {
     postsArrs.push(userArr.posts);
     userArr.posts.map((info) => {
