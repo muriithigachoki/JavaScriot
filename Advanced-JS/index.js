@@ -120,6 +120,7 @@ fetchProducts = async () => {
     return error;
   }
 };
+
 const main = async () => {
   const products = await fetchProducts();
   if (products.length) {
@@ -158,7 +159,7 @@ const main = async () => {
     });
   } else {
     const errDesc = document.createElement("h2");
-    maincontainer.appendChild(errDesc);
+    mainContainer.appendChild(errDesc);
     errDesc.textContent = `No products available`;
   }
 };
