@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-around;
+      padding-top: 50px;
+    }
+    .profile-info,
+    .search-bar {
+      margin-top: 50px;
+    }
+    img#image {
+      width: 150px;
+      border-radius: 70px;
+    }
+    div#profile {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+
+    .image {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      width: 80px;
+      height: 40px;
+    }
+    input {
+      width: 150px;
+      height: 30px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div id="profile" class="profile">
+      <div class="image">
+        <img id="image" src="" alt="" />
+        <button>Portfolio</button>
+        <button>twitter url</button>
+      </div>
+      <div class="profile-info">
+        <p id="name"></p>
+        <p id="numberOfRepos"></p>
+        <p id="location"></p>
+      </div>
+    </div>
+    <div id="container">
+      <form action="" id="form" onsubmit="userInput(event)">
+        <input
+          type="text"
+          name="data"
+          id="data"
+          placeholder="search user ..."
+        />
+        <button style="width: 100px; height: 40px" type="submit">
+          search github user
+        </button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
