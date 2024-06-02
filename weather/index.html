@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      justify-content: space-around;
+      align-items: center;
+      background-image: url(./assets/lightBackground.jpg);
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <form action="" id="form" onsubmit="SearchCity(event)">
+      <input
+        style="height: 30px; border-radius: 10px"
+        type="text"
+        name="data"
+        id="data"
+        placeholder="enter a city ..."
+      />
+      <button
+        style="width: 100px; height: 30px; border-radius: 10px"
+        type="submit"
+      >
+        search
+      </button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
